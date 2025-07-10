@@ -17,7 +17,6 @@ async function fetchData() {
   try {
     const totalPage = 5;
     const outputDir = path.join(__dirname, "./data");
-    // const __dirname = dirname(__filename);
     await fs.mkdir(outputDir, { recursive: true });
 
     for (let page = 1; page <= totalPage; page++) {
