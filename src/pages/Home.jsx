@@ -145,7 +145,8 @@ const Home = () => {
             </div>
           )}
         </div>
-        <div className="pagination">
+        {/* Pagination */}
+        {/* <div className="pagination">
           <button
             onClick={() => handlePageChange(currentPage - 1)}
             disabled={currentPage === 1}
@@ -164,6 +165,68 @@ const Home = () => {
               {index + 1}
             </button>
           ))}
+          <button
+            onClick={() => handlePageChange(currentPage + 1)}
+            disabled={currentPage === totalPages}
+            className="page-btn"
+          >
+            Next
+          </button>
+        </div> */}
+
+        <div className="pagination">
+          <button
+            onClick={() => handlePageChange(currentPage - 1)}
+            disabled={currentPage === 1}
+            className="page-btn"
+          >
+            Previous
+          </button>
+          {totalPages > 1 && (
+            <>
+              {currentPage > 2 && (
+                <>
+                  <button
+                    onClick={() => handlePageChange(1)}
+                    className="page-btn"
+                  >
+                    1
+                  </button>
+                  {currentPage > 3 && <span className="ellipsis">...</span>}
+                </>
+              )}
+              {Array.from({ length: 3 }, (_, index) => {
+                const pageNum = currentPage - 1 + index;
+                if (pageNum > 0 && pageNum <= totalPages) {
+                  return (
+                    <button
+                      key={pageNum}
+                      onClick={() => handlePageChange(pageNum)}
+                      className={`page-btn ${
+                        currentPage === pageNum ? "active" : ""
+                      }`}
+                    >
+                      {pageNum}
+                    </button>
+                  );
+                }
+                return null;
+              })}
+              {currentPage < totalPages - 1 && (
+                <>
+                  {currentPage < totalPages - 2 && (
+                    <span className="ellipsis">...</span>
+                  )}
+                  <button
+                    onClick={() => handlePageChange(totalPages)}
+                    className="page-btn"
+                  >
+                    {totalPages}
+                  </button>
+                </>
+              )}
+            </>
+          )}
           <button
             onClick={() => handlePageChange(currentPage + 1)}
             disabled={currentPage === totalPages}
