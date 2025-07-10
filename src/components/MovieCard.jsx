@@ -1,5 +1,4 @@
 import React from "react";
-// { useEffect, useState }
 // Style
 import "../style/movieCard.scss";
 

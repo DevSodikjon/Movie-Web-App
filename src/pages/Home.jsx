@@ -14,6 +14,7 @@ const Home = () => {
   const [currentPage, setCurrentPage] = useState(1);
   const [genreFilter, setGenreFilter] = useState("");
   const [yearFilter, setYearFilter] = useState("");
+  const [languageFilter, setLanguageFilter] = useState("");
   const [error, setError] = useState(null);
   const moviesPerPage = 10;
 
@@ -57,14 +58,9 @@ const Home = () => {
 
   // Searching
   const filteredMovies = moveis.filter((movie) => {
-    const matchesSearch = movie.title
-      ?.toLowerCase()
-      .includes(searchItem.toLowerCase());
-
-    const matchesSearch1 = searchItem
+    const matchesSearch = searchItem
       ? movie.title?.toLowerCase().includes(searchItem.toLowerCase())
-      : false;
-
+      : true;
     const matchesGenre = genreFilter
       ? movie.genre_ids?.includes(parseInt(genreFilter))
       : true;
@@ -73,10 +69,12 @@ const Home = () => {
       ? movie.release_date?.startsWith(yearFilter)
       : true;
 
-    return matchesSearch && matchesGenre && matchesYear;
-  });
+    const matchesLanguage = languageFilter
+      ? movie.original_language === languageFilter
+      : true;
 
-  console.log(filteredMovies);
+    return matchesSearch && matchesGenre && matchesYear && matchesLanguage;
+  });
 
   // Pagination logic
   const totalPages = Math.ceil(filteredMovies.length / moviesPerPage);
@@ -87,10 +85,10 @@ const Home = () => {
     indexOfLastMovie
   );
 
-  // Handle page change
+  // Changing the page
   const handlePageChange = (pageNumber) => {
     setCurrentPage(pageNumber);
-    window.scrollTo(0, 0); // Sahifa o'zgarganda yuqoriga skroll qilish
+    window.scrollTo(0, 0);
   };
 
   // The list of the Genres
@@ -125,9 +123,12 @@ const Home = () => {
             setGenreFilter={setGenreFilter}
             yearFilter={yearFilter}
             setYearFilter={setYearFilter}
+            languageFilter={languageFilter}
+            setLanguageFilter={setLanguageFilter}
           />
         </div>
 
+        {/* Rendering cards */}
         <div className="movie_list">
           {error ? (
             <div className="error">
@@ -145,35 +146,8 @@ const Home = () => {
             </div>
           )}
         </div>
-        {/* Pagination */}
-        {/* <div className="pagination">
-          <button
-            onClick={() => handlePageChange(currentPage - 1)}
-            disabled={currentPage === 1}
-            className="page-btn"
-          >
-            Previous
-          </button>
-          {Array.from({ length: totalPages }, (_, index) => (
-            <button
-              key={index + 1}
-              onClick={() => handlePageChange(index + 1)}
-              className={`page-btn ${
-                currentPage === index + 1 ? "active" : ""
-              }`}
-            >
-              {index + 1}
-            </button>
-          ))}
-          <button
-            onClick={() => handlePageChange(currentPage + 1)}
-            disabled={currentPage === totalPages}
-            className="page-btn"
-          >
-            Next
-          </button>
-        </div> */}
 
+        {/* Pagination */}
         <div className="pagination">
           <button
             onClick={() => handlePageChange(currentPage - 1)}

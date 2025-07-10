@@ -7,9 +7,13 @@ const FIlterModal = ({
   setGenreFilter,
   yearFilter,
   setYearFilter,
+  languageFilter,
+  setLanguageFilter,
 }) => {
+
+  
   return (
-    <>
+    <div>
       <div className="modal_overlay" onClick={onClose}></div>
       <div className="filter_modal">
         <div className="top">
@@ -60,9 +64,28 @@ const FIlterModal = ({
               <option value="2019">2019</option>
             </select>
           </div>
+
+          {/* Language */}
+          <div className="media_type language">
+            <label htmlFor="language-select">Language:</label>
+            <select
+              value={languageFilter}
+              onChange={(e) => setLanguageFilter(e.target.value)}
+              id="language-select"
+              className="media_select"
+            >
+              <option value="">All</option>
+              <option value="en">English</option>
+              <option value="ko">Korean</option>
+              <option value="zh">Chinese</option>
+              <option value="uz">Uzbek</option>
+              <option value="fr">French</option>
+              <option value="es">Spanish</option>
+            </select>
+          </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

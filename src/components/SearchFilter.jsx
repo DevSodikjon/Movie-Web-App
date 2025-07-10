@@ -7,18 +7,17 @@ import FIlterModal from "./FIlterModal";
 import "../style/searchFilter.scss";
 
 const SearchFilter = ({
-  searchItem,
+   searchItem,
   setSearchItem,
   genreFilter,
   setGenreFilter,
   yearFilter,
   setYearFilter,
+  languageFilter,
+  setLanguageFilter,
 }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
-  console.log("searchItem:", searchItem);
-  const handleClearSearch = () => {
-    setSearchItem(""); // Inputni tozalash
-  };
+
   return (
     <div className="searchFilter_box">
       <input
@@ -40,6 +39,8 @@ const SearchFilter = ({
           setGenreFilter={setGenreFilter}
           yearFilter={yearFilter}
           setYearFilter={setYearFilter}
+          languageFilter={languageFilter}
+          setLanguageFilter={setLanguageFilter}
         />
       )}
     </div>
