@@ -1,0 +1,400 @@
+{
+  "page": 5,
+  "results": [
+    {
+      "adult": false,
+      "backdrop_path": "/by8z9Fe8y7p4jo2YlW2SZDnptyT.jpg",
+      "genre_ids": [
+        28,
+        35,
+        878
+      ],
+      "id": 533535,
+      "original_language": "en",
+      "original_title": "Deadpool & Wolverine",
+      "overview": "A listless Wade Wilson toils away in civilian life with his days as the morally flexible mercenary, Deadpool, behind him. But when his homeworld faces an existential threat, Wade must reluctantly suit-up again with an even more reluctant Wolverine.",
+      "popularity": 40.4875,
+      "poster_path": "/8cdWjvZQUExUUTzyp4t6EDMubfO.jpg",
+      "release_date": "2024-07-24",
+      "title": "Deadpool & Wolverine",
+      "video": false,
+      "vote_average": 7.59,
+      "vote_count": 7448
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/5MnP0h7RcUCeX7gpxMYoMScmfq7.jpg",
+      "genre_ids": [
+        14,
+        28,
+        12,
+        16,
+        35,
+        10751
+      ],
+      "id": 82702,
+      "original_language": "en",
+      "original_title": "How to Train Your Dragon 2",
+      "overview": "Five years have passed since Hiccup and Toothless united the dragons and Vikings of Berk. Now, they spend their time charting unmapped territories. During one of their adventures, the pair discover a secret cave that houses hundreds of wild dragons -- and a mysterious dragon rider. Hiccup and Toothless find themselves at the center of a battle to protect Berk from a power-hungry warrior.",
+      "popularity": 40.0162,
+      "poster_path": "/d13Uj86LdbDLrfDoHR5aDOFYyJC.jpg",
+      "release_date": "2014-06-05",
+      "title": "How to Train Your Dragon 2",
+      "video": false,
+      "vote_average": 7.676,
+      "vote_count": 9925
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/dzY2ZYyPRbXcw8UOupHK3V5VQYk.jpg",
+      "genre_ids": [
+        10749
+      ],
+      "id": 259872,
+      "original_language": "fr",
+      "original_title": "Des jours plus belles que la nuit",
+      "overview": "Real-life young couple Wim and Floor spend an afternoon in the sunwashed rooms of a crumbling home in Belgium. In a unique twist, this artistic erotic documentary is edited in nearly real-time. In the slowness, we get the build, the sweetness, and the sexiness. Forget about fingersnapping fast editing. Slow is where it’s at.",
+      "popularity": 40.2602,
+      "poster_path": "/uCkANtG6ezb7hjRKVudY3PUcbvn.jpg",
+      "release_date": "2009-10-10",
+      "title": "Skin. Like. Sun.",
+      "video": false,
+      "vote_average": 6,
+      "vote_count": 104
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/21lM9hfYNDX9RnWzp4aq0iQTEbq.jpg",
+      "genre_ids": [
+        16,
+        10749
+      ],
+      "id": 1317276,
+      "original_language": "ja",
+      "original_title": "映画 ギヴン 海へ",
+      "overview": "Mafuyu doubts his place in the band, but a familiar face could be the spark that brings him back to the stage.",
+      "popularity": 38.2757,
+      "poster_path": "/2VLnT5JtJ77ErG6GD3c1J628VLp.jpg",
+      "release_date": "2024-09-20",
+      "title": "given the Movie: To the Sea",
+      "video": false,
+      "vote_average": 9,
+      "vote_count": 4
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/h3KN24PrOheHVYs9ypuOIdFBEpX.jpg",
+      "genre_ids": [
+        16,
+        10751,
+        12
+      ],
+      "id": 166428,
+      "original_language": "en",
+      "original_title": "How to Train Your Dragon: The Hidden World",
+      "overview": "As Hiccup fulfills his dream of creating a peaceful dragon utopia, Toothless’ discovery of an untamed, elusive mate draws the Night Fury away. When danger mounts at home and Hiccup’s reign as village chief is tested, both dragon and rider must make impossible decisions to save their kind.",
+      "popularity": 38.7573,
+      "poster_path": "/xvx4Yhf0DVH8G4LzNISpMfFBDy2.jpg",
+      "release_date": "2019-01-03",
+      "title": "How to Train Your Dragon: The Hidden World",
+      "video": false,
+      "vote_average": 7.753,
+      "vote_count": 6697
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/op3qmNhvwEvyT7UFyPbIfQmKriB.jpg",
+      "genre_ids": [
+        28,
+        14,
+        12
+      ],
+      "id": 324544,
+      "original_language": "en",
+      "original_title": "In the Lost Lands",
+      "overview": "A queen sends the powerful and feared sorceress Gray Alys to the ghostly wilderness of the Lost Lands in search of a magical power, where she and her guide, the drifter Boyce, must outwit and outfight both man and demon.",
+      "popularity": 37.2338,
+      "poster_path": "/dDlfjR7gllmr8HTeN6rfrYhTdwX.jpg",
+      "release_date": "2025-02-27",
+      "title": "In the Lost Lands",
+      "video": false,
+      "vote_average": 6.5,
+      "vote_count": 528
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/t28kCBe0hngvt4ViIsnrwNBrhq8.jpg",
+      "genre_ids": [
+        18
+      ],
+      "id": 70410,
+      "original_language": "fr",
+      "original_title": "La Femme publique",
+      "overview": "An inexperienced young actress is invited to play a role in a film based on Dostoyevsky's 'The Possessed'. The film director, a Czech immigrant in Paris, takes over her life, and in a short time she is unable to draw the line between acting and reality. She winds up playing a real-life role posing as the dead wife of another Czech immigrant, who is manipulated by the filmmaker into commiting a political assassination.",
+      "popularity": 29.8518,
+      "poster_path": "/5MXaIoOKGfxanGqxgrLgv0OtV39.jpg",
+      "release_date": "1984-06-16",
+      "title": "The Public Woman",
+      "video": false,
+      "vote_average": 6.2,
+      "vote_count": 50
+    },
+    {
+      "adult": false,
+      "backdrop_path": null,
+      "genre_ids": [
+        28
+      ],
+      "id": 812455,
+      "original_language": "en",
+      "original_title": "Victoria",
+      "overview": "Victoria is a woman betrayed, now on a mission for revenge and destroying anything that gets in her way.",
+      "popularity": 37.0439,
+      "poster_path": "/aOSTW7ZitFAff06mZVXUnktejHY.jpg",
+      "release_date": "2021-01-16",
+      "title": "Victoria",
+      "video": false,
+      "vote_average": 8.5,
+      "vote_count": 2
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/lBsbWXGn9maPKGhN3fozTU3BH0r.jpg",
+      "genre_ids": [
+        28,
+        18,
+        53
+      ],
+      "id": 757725,
+      "original_language": "en",
+      "original_title": "Shadow Force",
+      "overview": "Kyrah and Isaac were once the leaders of a multinational special forces group called Shadow Force. They broke the rules by falling in love, and in order to protect their son, they go underground. With a large bounty on their heads, and the vengeful Shadow Force hot on their trail, one family's fight becomes all-out war.",
+      "popularity": 35.9055,
+      "poster_path": "/9LCpHFXZgkqp2AWiYq0mGbfZauk.jpg",
+      "release_date": "2025-05-01",
+      "title": "Shadow Force",
+      "video": false,
+      "vote_average": 6.14,
+      "vote_count": 111
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/kYgQzzjNis5jJalYtIHgrom0gOx.jpg",
+      "genre_ids": [
+        16,
+        10751,
+        28,
+        35,
+        12,
+        14
+      ],
+      "id": 1011985,
+      "original_language": "en",
+      "original_title": "Kung Fu Panda 4",
+      "overview": "Po is gearing up to become the spiritual leader of his Valley of Peace, but also needs someone to take his place as Dragon Warrior. As such, he will train a new kung fu practitioner for the spot and will encounter a villain called the Chameleon who conjures villains from the past.",
+      "popularity": 36.4187,
+      "poster_path": "/nqXsAaQsKw2gKpkfhIgjXNDRqg7.jpg",
+      "release_date": "2024-03-02",
+      "title": "Kung Fu Panda 4",
+      "video": false,
+      "vote_average": 7.058,
+      "vote_count": 3130
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/vNLh20SlNQaHXuhFnktGm67kfph.jpg",
+      "genre_ids": [
+        18
+      ],
+      "id": 744334,
+      "original_language": "ru",
+      "original_title": "Хозяин",
+      "overview": "An ordinary man’s life takes an unlikely turn when he saves the life of a high-ranking security officer in an accident.",
+      "popularity": 38.097,
+      "poster_path": "/dCe94o81DIYamwyKZ09ISF5MFrw.jpg",
+      "release_date": "2023-11-09",
+      "title": "The Owner",
+      "video": false,
+      "vote_average": 6,
+      "vote_count": 5
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/heMsXGykub43tU79I9hv6T1vHRc.jpg",
+      "genre_ids": [
+        18,
+        10749
+      ],
+      "id": 1470086,
+      "original_language": "tl",
+      "original_title": "Ligaw",
+      "overview": "A sultry woman who charms the hearts of men in a remote province. Dolores, a devoted wife to her paraplegic husband, falls for a young mountaineer. What begins as a reckless escape turns into an affair drenched in passion and secrecy.",
+      "popularity": 35.4033,
+      "poster_path": "/yc8V3KEnhvPrzXpdYTXdTvjpOb5.jpg",
+      "release_date": "2025-05-09",
+      "title": "Ligaw",
+      "video": false,
+      "vote_average": 10,
+      "vote_count": 1
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/8btfz81bOJ2lC7cujYBTw03wzg3.jpg",
+      "genre_ids": [
+        16,
+        14,
+        12,
+        28
+      ],
+      "id": 980477,
+      "original_language": "zh",
+      "original_title": "哪吒之魔童闹海",
+      "overview": "Following the Tribulation, although the souls of Ne Zha and Ao Bing were preserved, their physical bodies will soon be destroyed. Tai Yi Zhen Ren plans to use the Seven Colored Lotus to reshape their physical forms, but encounters numerous difficulties. What will become of Ne Zha and Ao Bing?",
+      "popularity": 35.1681,
+      "poster_path": "/293Mo4GWf7Tl0TfAr5NFghqeMy7.jpg",
+      "release_date": "2025-01-29",
+      "title": "Ne Zha 2",
+      "video": false,
+      "vote_average": 8.074,
+      "vote_count": 183
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/9ayjPfWtDyooj4ErcgZcoC22dVJ.jpg",
+      "genre_ids": [
+        16,
+        10751,
+        14
+      ],
+      "id": 1449951,
+      "original_language": "en",
+      "original_title": "Snow White",
+      "overview": "When the Queen’s jealousy turns deadly, Snow White must join forces with gnomes to fight back against her stepmother’s wrath.",
+      "popularity": 35.4478,
+      "poster_path": "/ilFLHU1OxUS1YDvUMCr8K3hW28r.jpg",
+      "release_date": "2025-03-07",
+      "title": "Snow White",
+      "video": false,
+      "vote_average": 7,
+      "vote_count": 16
+    },
+    {
+      "adult": false,
+      "backdrop_path": null,
+      "genre_ids": [],
+      "id": 736350,
+      "original_language": "en",
+      "original_title": "Playboy Playmate Workout",
+      "overview": "Lynda Wiesmeier, Playmate of the Month July 1982, along with other Playmates",
+      "popularity": 38.5633,
+      "poster_path": "/zNvrtwwOB1imM58d1Y4u3TQxKYW.jpg",
+      "release_date": "1983-01-01",
+      "title": "Playboy Playmate Workout",
+      "video": false,
+      "vote_average": 10,
+      "vote_count": 1
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/wMEhptvj6pcp2QSzHYcl4DFA5Pz.jpg",
+      "genre_ids": [
+        18,
+        27,
+        878
+      ],
+      "id": 933260,
+      "original_language": "en",
+      "original_title": "The Substance",
+      "overview": "A fading celebrity decides to use a black market drug, a cell-replicating substance that temporarily creates a younger, better version of herself.",
+      "popularity": 36.509,
+      "poster_path": "/lqoMzCcZYEFK729d6qzt349fB4o.jpg",
+      "release_date": "2024-09-07",
+      "title": "The Substance",
+      "video": false,
+      "vote_average": 7.1,
+      "vote_count": 4811
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/4XM8DUTQb3lhLemJC51Jx4a2EuA.jpg",
+      "genre_ids": [
+        28,
+        80,
+        53,
+        12,
+        9648
+      ],
+      "id": 385687,
+      "original_language": "en",
+      "original_title": "Fast X",
+      "overview": "Over many missions and against impossible odds, Dom Toretto and his family have outsmarted, out-nerved and outdriven every foe in their path. Now, they confront the most lethal opponent they've ever faced: A terrifying threat emerging from the shadows of the past who's fueled by blood revenge, and who is determined to shatter this family and destroy everything—and everyone—that Dom loves, forever.",
+      "popularity": 36.3876,
+      "poster_path": "/fiVW06jE7z9YnO4trhaMEdclSiC.jpg",
+      "release_date": "2023-05-17",
+      "title": "Fast X",
+      "video": false,
+      "vote_average": 7.038,
+      "vote_count": 5947
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/9BBTo63ANSmhC4e6r62OJFuK2GL.jpg",
+      "genre_ids": [
+        878,
+        28,
+        12
+      ],
+      "id": 24428,
+      "original_language": "en",
+      "original_title": "The Avengers",
+      "overview": "When an unexpected enemy emerges and threatens global safety and security, Nick Fury, director of the international peacekeeping agency known as S.H.I.E.L.D., finds himself in need of a team to pull the world back from the brink of disaster. Spanning the globe, a daring recruitment effort begins!",
+      "popularity": 30.9424,
+      "poster_path": "/RYMX2wcKCBAr24UyPD7xwmjaTn.jpg",
+      "release_date": "2012-04-25",
+      "title": "The Avengers",
+      "video": false,
+      "vote_average": 7.772,
+      "vote_count": 32301
+    },
+    {
+      "adult": false,
+      "backdrop_path": null,
+      "genre_ids": [
+        16
+      ],
+      "id": 846817,
+      "original_language": "ar",
+      "original_title": "ليل",
+      "overview": "Night has to trick the mother of the missing child into sleeping to save her soul.",
+      "popularity": 38.5227,
+      "poster_path": "/wtNHVaiEWwc05Iwzu1gravgvtDo.jpg",
+      "release_date": "2024-09-07",
+      "title": "Night",
+      "video": false,
+      "vote_average": 10,
+      "vote_count": 2
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/l33oR0mnvf20avWyIMxW02EtQxn.jpg",
+      "genre_ids": [
+        12,
+        18,
+        878
+      ],
+      "id": 157336,
+      "original_language": "en",
+      "original_title": "Interstellar",
+      "overview": "The adventures of a group of explorers who make use of a newly discovered wormhole to surpass the limitations on human space travel and conquer the vast distances involved in an interstellar voyage.",
+      "popularity": 32.7533,
+      "poster_path": "/gEU2QniE6E77NI6lCU6MxlNBvIx.jpg",
+      "release_date": "2014-11-05",
+      "title": "Interstellar",
+      "video": false,
+      "vote_average": 8.456,
+      "vote_count": 37384
+    }
+  ],
+  "total_pages": 51341,
+  "total_results": 1026817
+}
