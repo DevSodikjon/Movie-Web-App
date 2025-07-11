@@ -1,6 +1,9 @@
 import React, { use } from "react";
 import { useState, useEffect } from "react";
 
+// Hooks
+import useFetch from "../hooks/useFetch";
+
 // Components
 import MovieCard from "../components/MovieCard";
 import SearchFilter from "../components/SearchFilter";
@@ -9,52 +12,13 @@ import SearchFilter from "../components/SearchFilter";
 import "../style/home.scss";
 
 const Home = () => {
-  const [moveis, setMovies] = useState([]);
+  const { moveis, loading, error } = useFetch();
   const [searchItem, setSearchItem] = useState("");
   const [currentPage, setCurrentPage] = useState(1);
   const [genreFilter, setGenreFilter] = useState("");
   const [yearFilter, setYearFilter] = useState("");
   const [languageFilter, setLanguageFilter] = useState("");
-  const [error, setError] = useState(null);
   const moviesPerPage = 10;
-
-  // Getting data
-  useEffect(() => {
-    fetch("/data/combined_data.json")
-      .then((response) => {
-        if (!response.ok) {
-          throw new Error(
-            `HTTP error: ${response.status} ${response.statusText}`
-          );
-        }
-
-        return response.text();
-      })
-      .then((text) => {
-        try {
-          const data = JSON.parse(text);
-
-          if (data.results && Array.isArray(data.results)) {
-            setMovies(data.results);
-
-            setError(null);
-          } else {
-            throw new Error('"result" array is not found on JSON file');
-          }
-        } catch (error) {
-          throw new Error(
-            `JSON parse error: ${error.message}. Returned value: ${text.slice(
-              0,
-              50
-            )}...`
-          );
-        }
-      })
-      .catch((error) => {
-        console.error("Error on uploading JSON:", error);
-        setError(error.message);
-      });
-  }, []);
 
   // Searching
   const filteredMovies = moveis.filter((movie) => {
@@ -92,21 +56,21 @@ const Home = () => {
   };
 
   // The list of the Genres
-  const genres = [
-    { id: 28, name: "Action" },
-    { id: 12, name: "Adventure" },
-    { id: 16, name: "Animation" },
-    { id: 35, name: "Comedy" },
-    { id: 18, name: "Drama" },
-    { id: 53, name: "Thriller" },
-    { id: 80, name: "Crime" },
-    { id: 878, name: "Science Fiction" },
-    { id: 14, name: "Fantasy" },
-    { id: 27, name: "Horror" },
-    { id: 10751, name: "Family" },
-    { id: 10402, name: "Music" },
-    { id: 9648, name: "Mystery" },
-  ];
+  // const genres = [
+  //   { id: 28, name: "Action" },
+  //   { id: 12, name: "Adventure" },
+  //   { id: 16, name: "Animation" },
+  //   { id: 35, name: "Comedy" },
+  //   { id: 18, name: "Drama" },
+  //   { id: 53, name: "Thriller" },
+  //   { id: 80, name: "Crime" },
+  //   { id: 878, name: "Science Fiction" },
+  //   { id: 14, name: "Fantasy" },
+  //   { id: 27, name: "Horror" },
+  //   { id: 10751, name: "Family" },
+  //   { id: 10402, name: "Music" },
+  //   { id: 9648, name: "Mystery" },
+  // ];
 
   return (
     <div>
@@ -169,7 +133,7 @@ const Home = () => {
                   {currentPage > 3 && <span className="ellipsis">...</span>}
                 </>
               )}
-              {Array.from({ length: 3 }, (_, index) => {
+              {Array.from({ length: 4 }, (_, index) => {
                 const pageNum = currentPage - 1 + index;
                 if (pageNum > 0 && pageNum <= totalPages) {
                   return (

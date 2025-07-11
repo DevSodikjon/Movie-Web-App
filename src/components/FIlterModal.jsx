@@ -10,8 +10,46 @@ const FIlterModal = ({
   languageFilter,
   setLanguageFilter,
 }) => {
+  // Genres
+  const genres = [
+    { id: "", name: "All" },
+    { id: "28", name: "Action" },
+    { id: "12", name: "Adventure" },
+    { id: "16", name: "Animation" },
+    { id: "35", name: "Comedy" },
+    { id: "18", name: "Drama" },
+    { id: "53", name: "Thriller" },
+    { id: "80", name: "Crime" },
+    { id: "878", name: "Science Fiction" },
+    { id: "14", name: "Fantasy" },
+    { id: "27", name: "Horror" },
+    { id: "10751", name: "Family" },
+    { id: "10402", name: "Music" },
+    { id: "9648", name: "Mystery" },
+  ];
 
-  
+  // Years
+  const years = [
+    { id: "", name: "All" },
+    { id: "2024", name: "2024" },
+    { id: "2023", name: "2023" },
+    { id: "2022", name: "2022" },
+    { id: "2021", name: "2021" },
+    { id: "2020", name: "2020" },
+    { id: "2019", name: "2019" },
+  ];
+
+  // Languages
+  const languages = [
+    { id: "", name: "All" },
+    { id: "en", name: "English" },
+    { id: "ko", name: "Korean" },
+    { id: "zh", name: "Chinese" },
+    { id: "uz", name: "Uzbek" },
+    { id: "fr", name: "French" },
+    { id: "es", name: "Spanish" },
+  ];
+
   return (
     <div>
       <div className="modal_overlay" onClick={onClose}></div>
@@ -29,20 +67,11 @@ const FIlterModal = ({
               value={genreFilter}
               onChange={(e) => setGenreFilter(e.target.value)}
             >
-              <option value="">All</option>
-              <option value="28">Action</option>
-              <option value="12">Adventure</option>
-              <option value="16">Animation</option>
-              <option value="35">Comedy</option>
-              <option value="18">Drama</option>
-              <option value="53">Thriller</option>
-              <option value="80">Crime</option>
-              <option value="878">Science Fiction</option>
-              <option value="14">Fantasy</option>
-              <option value="27">Horror</option>
-              <option value="10751">Family</option>
-              <option value="10402">Music</option>
-              <option value="9648">Mystery</option>
+              {genres.map((genre) => (
+                <option key={genre.id} value={genre.id}>
+                  {genre.name}
+                </option>
+              ))}
             </select>
           </div>
 
@@ -55,13 +84,11 @@ const FIlterModal = ({
               value={yearFilter}
               onChange={(e) => setYearFilter(e.target.value)}
             >
-              <option value="">All</option>
-              <option value="2024">2024</option>
-              <option value="2023">2023</option>
-              <option value="2022">2022</option>
-              <option value="2021">2021</option>
-              <option value="2020">2020</option>
-              <option value="2019">2019</option>
+              {years.map((year) => (
+                <option key={year.id} value={year.id}>
+                  {year.name}
+                </option>
+              ))}
             </select>
           </div>
 
@@ -69,18 +96,16 @@ const FIlterModal = ({
           <div className="media_type language">
             <label htmlFor="language-select">Language:</label>
             <select
-              value={languageFilter}
-              onChange={(e) => setLanguageFilter(e.target.value)}
               id="language-select"
               className="media_select"
+              value={languageFilter}
+              onChange={(e) => setLanguageFilter(e.target.value)}
             >
-              <option value="">All</option>
-              <option value="en">English</option>
-              <option value="ko">Korean</option>
-              <option value="zh">Chinese</option>
-              <option value="uz">Uzbek</option>
-              <option value="fr">French</option>
-              <option value="es">Spanish</option>
+              {languages.map((lang) => (
+                <option key={lang.id} value={lang.id}>
+                  {lang.name}
+                </option>
+              ))}
             </select>
           </div>
         </div>
