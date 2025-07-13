@@ -25,6 +25,7 @@ const Home = () => {
     const matchesSearch = searchItem
       ? movie.title?.toLowerCase().includes(searchItem.toLowerCase())
       : true;
+
     const matchesGenre = genreFilter
       ? movie.genre_ids?.includes(parseInt(genreFilter))
       : true;
@@ -54,23 +55,6 @@ const Home = () => {
     setCurrentPage(pageNumber);
     window.scrollTo(0, 0);
   };
-
-  // The list of the Genres
-  // const genres = [
-  //   { id: 28, name: "Action" },
-  //   { id: 12, name: "Adventure" },
-  //   { id: 16, name: "Animation" },
-  //   { id: 35, name: "Comedy" },
-  //   { id: 18, name: "Drama" },
-  //   { id: 53, name: "Thriller" },
-  //   { id: 80, name: "Crime" },
-  //   { id: 878, name: "Science Fiction" },
-  //   { id: 14, name: "Fantasy" },
-  //   { id: 27, name: "Horror" },
-  //   { id: 10751, name: "Family" },
-  //   { id: 10402, name: "Music" },
-  //   { id: 9648, name: "Mystery" },
-  // ];
 
   return (
     <div>
